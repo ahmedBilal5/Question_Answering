@@ -16,7 +16,7 @@ def evaluate():
 @app.route('/', methods=['GET'])
 def home():
     # Call the get_evaluation method of the Eval_model instance
-    result = Onnx_qa_model.get_answer('What is Ahmed Bilal trying?', 'Ahmed Bilal has been lately trying his best.')
+    result = Onnx_qa_model.get_answer('What is Ahmed Bilal trying?', 'Ahmed Bilal is trying to finish the MLOPS project.')
     return jsonify(result)
 
 if __name__ == '__main__':
